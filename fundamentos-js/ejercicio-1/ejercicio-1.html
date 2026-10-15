@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1 - Tipos de datos en JS</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>Práctica 1: Variables y Tipos</h1>
+    <p class="subtitulo">Comprobación de valores y tipos por consola</p>
+    <a href="../index.html">← Volver al inicio</a>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="tarjeta">
+      <h2>Descripción de la tarea</h2>
+      <p>Creación de diferentes variables en JavaScript para inspeccionar su valor y su tipo mediante <code>typeof</code>, empleando los métodos <code>console.log</code>, <code>console.info</code>, <code>console.error</code> y <code>console.debug</code>.</p>
+      <ul>
+        <li>Declaraciones con <code>var</code>, <code>let</code> y <code>const</code>.</li>
+        <li>Tipos incluidos: textos, enteros, decimales, booleanos, <code>null</code>, <code>undefined</code>, listas (arrays), objetos y funciones.</li>
+      </ul>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Panel de control</h2>
+      <p>Ejecuta cada método de consola de forma individual:</p>
+      <button id="btn-log" class="boton">Ejecutar log</button>
+      <button id="btn-info" class="boton">Ejecutar info</button>
+      <button id="btn-error" class="boton secundario">Ejecutar error</button>
+      <button id="btn-debug" class="boton secundario">Ejecutar debug</button>
+      <button id="btn-limpiar" class="boton">Borrar consola</button>
+      <p class="aviso">Puedes revisar las herramientas de desarrollador (F12) para comprobar la salida nativa.</p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Salida del programa</h2>
+      <p>Estado de la última acción:</p>
+      <div id="resultado" class="capa-resultado">Esperando ejecución...</div>
+      <p style="margin-top:1rem;">Registro de consola:</p>
+      <div id="consola" class="capa-consola"></div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Fundamentos de JavaScript - Ejercicio 1</p>
+  </footer>
+
+  <script src="../js/consola.js"></script>
+  <script src="ejercicio-1.js"></script>
+</body>
+</html>
