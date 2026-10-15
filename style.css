@@ -1,0 +1,123 @@
+/* Reset básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Fondo oscuro moderno */
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: #1e293b;
+    max-width: 750px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.etiqueta {
+    background-color: rgba(247, 223, 30, 0.15);
+    color: #f7df1e; /* Amarillo típico de JavaScript */
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.subtitulo {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* Cuadrícula de ejercicios */
+.grid-ejercicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+/* Estilo de cada tarjeta / enlace */
+.tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+}
+
+/* Efecto al pasar el ratón por encima */
+.tarjeta:hover {
+    transform: translateY(-4px);
+    border-color: #f7df1e; /* Borde amarillo JS al hacer hover */
+    box-shadow: 0 10px 15px -3px rgba(247, 223, 30, 0.1);
+    background-color: #162032;
+}
+
+.icono {
+    font-size: 2.2rem;
+}
+
+.info h2 {
+    font-size: 1.2rem;
+    color: #f8fafc;
+    margin-bottom: 4px;
+    transition: color 0.2s ease;
+}
+
+.tarjeta:hover .info h2 {
+    color: #f7df1e;
+}
+
+.info p {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.tarjeta:hover .info p {
+    color: #cbd5e1;
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 500px) {
+    .contenedor {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
